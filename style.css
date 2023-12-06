@@ -5,12 +5,13 @@
 }
 
 .game{
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid black;
+    border-bottom: 15px green solid;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#11a6b1, #a59797);
 }
 
 .pipe{
@@ -18,13 +19,17 @@
     bottom: 0;
     width: 80px;
     right: -80px;
-    animation: pipe-a 2s infinite linear;
+    animation: pipe-a 1.5s infinite linear;
 }
 .mario{
     width: 150px;
     position: absolute;
     bottom: 0;
+}
+
+.jump{
     animation: jump 500ms ease-out; 
+    height: 120px;
 }
 @keyframes jump{
     0%{
